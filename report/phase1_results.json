@@ -1,0 +1,64 @@
+{
+  "dataset_overview": {
+    "n_rows": 13979592.0,
+    "n_features": 12.0,
+    "treatment_ratio": 0.8500001287591226,
+    "control_ratio": 0.14999987124087744,
+    "overall_conversion_rate": 0.002916680257907384,
+    "overall_visit_rate": 0.046992000911042324,
+    "conversion_rate_treatment": 0.0030894610674129645,
+    "conversion_rate_control": 0.0019375880152813366,
+    "visit_rate_treatment": 0.048543360048743316,
+    "visit_rate_control": 0.03820095691954503,
+    "n_missing_total": 0.0,
+    "n_duplicate_rows": 1655747.0
+  },
+  "naive_lift_conversion": {
+    "outcome": "conversion",
+    "treated_rate": 0.0030894610674129645,
+    "control_rate": 0.0019375880152813366,
+    "absolute_lift": 0.0011518730521316279,
+    "relative_lift_pct": 59.44881177252619,
+    "n_treated": 11882655,
+    "n_control": 2096937
+  },
+  "naive_lift_visit": {
+    "outcome": "visit",
+    "treated_rate": 0.048543360048743316,
+    "control_rate": 0.03820095691954503,
+    "absolute_lift": 0.010342403129198284,
+    "relative_lift_pct": 27.07367553901961,
+    "n_treated": 11882655,
+    "n_control": 2096937
+  },
+  "treatment_assignment_verdict": {
+    "auc": 0.5094072145325999,
+    "n_features_imbalanced_smd_gt_0.1": 0,
+    "max_abs_smd": 0.04865819315103917,
+    "looks_randomized": true
+  },
+  "stabilized_ipw_conversion": {
+    "ate": 0.0009910623425941807
+  },
+  "confounding_injection_diagnostics": {
+    "confounder": "f4",
+    "original_n": 13979592,
+    "confounded_n": 2000000,
+    "original_treatment_ratio": 0.8500001287591226,
+    "confounded_treatment_ratio": 0.8372865,
+    "original_smd_confounder": 0.004208012604994589,
+    "confounded_smd_confounder": 0.2719985713931862
+  },
+  "confounding_target_population_rct_reference": {
+    "estimand": "ATE in the marginal-retention target population",
+    "ate": 0.0015861307462664322,
+    "se": 5.0257930249219706e-05,
+    "ci_low": 0.0014876270130404353,
+    "ci_high": 0.001684634479492429,
+    "treated_rate": 0.004386888199004848,
+    "control_rate": 0.0028007574527384154,
+    "mean_target_weight": 0.48320632593183965,
+    "beta": 1.0,
+    "z_clip": 2.0
+  }
+}
